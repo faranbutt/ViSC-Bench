@@ -1,1 +1,2 @@
-timestamp_utc,team,run_id,author_type,model,notes,submission_file,AP,AP50,AP75,AP_small,AP_medium,AP_large,AR1,AR10,AR100,prediction_count
+timestamp_utc,team,run_id,author_type,model,notes,AP,AP50,AP75,AP_small,AP_medium,AP_large,AR1,AR10,AR100,prediction_count
+2026-11-01 17:07:04 UTC,faran_01,run_01,llm,yolo,testing,0.004356435643564357,0.005940594059405941,0.005940594059405941,0.0,0.0,0.011485148514851485,0.0014736842105263158,0.003157894736842105,0.003157894736842105,9
