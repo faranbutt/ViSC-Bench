@@ -1,5 +1,5 @@
-# VOC-DeTC
-A Corruption Robust Object Detection Benchmark on Pascal VOC
+# ViSC Bench
+A Corruption-Robust Grape Instance Segmentation Benchmark for Human-vs-LLM Evaluation
 ## Public data
 
 - `data/public/images/train/`
