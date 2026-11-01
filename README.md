@@ -1,5 +1,5 @@
 # VOC-DeTC
-A Corruption-Robust Object Detection Benchmark on Pascal VOC
+A Corruption Robust Object Detection Benchmark on Pascal VOC
 ## Public data
 
 - `data/public/images/train/`
