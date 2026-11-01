@@ -1,7 +1,7 @@
 import json
 import sys
 from pathlib import Path
-
+import math
 import yaml
 
 
@@ -47,8 +47,91 @@ def main(pred_path, images_test_path):
                 raise SystemExit(f"Error: row {i} bbox width/height must be positive.")
         else:
             seg = pred["segmentation"]
-            if not isinstance(seg, (list, dict)) or not seg:
-                raise SystemExit(f"Error: row {i} segmentation must be non-empty list or RLE dict.")
+
+            image = next(
+                x for x in meta["images"]
+                if int(x["id"]) == int(pred["image_id"])
+            )
+
+            height = int(image["height"])
+            width = int(image["width"])
+
+            if isinstance(seg, list):
+
+                if not seg:
+                    raise SystemExit(
+                        f"Error: row {i} has empty segmentation."
+                    )
+
+                for j, polygon in enumerate(seg):
+
+                    if (
+                        not isinstance(polygon, list)
+                        or len(polygon) < 6
+                        or len(polygon) % 2 != 0
+                    ):
+                        raise SystemExit(
+                            f"Error: row {i}, polygon {j} "
+                            "must contain at least 3 coordinate pairs."
+                        )
+
+                    try:
+                        coords = [float(v) for v in polygon]
+                    except (TypeError, ValueError):
+                        raise SystemExit(
+                            f"Error: row {i}, polygon {j} "
+                            "contains invalid coordinates."
+                        )
+
+                    if not all(math.isfinite(v) for v in coords):
+                        raise SystemExit(
+                            f"Error: row {i}, polygon {j} "
+                            "contains non-finite coordinates."
+                        )
+
+                    xs = coords[0::2]
+                    ys = coords[1::2]
+
+                    if (
+                        min(xs) < 0 or max(xs) > width
+                        or min(ys) < 0 or max(ys) > height
+                    ):
+                        raise SystemExit(
+                            f"Error: row {i}, polygon {j} "
+                            "exceeds image boundaries."
+                        )
+
+            elif isinstance(seg, dict):
+
+                if seg.get("size") != [height, width]:
+                    raise SystemExit(
+                        f"Error: row {i} RLE dimensions do not match image."
+                    )
+
+                counts = seg.get("counts")
+
+                if isinstance(counts, list):
+                    if (
+                        any(
+                            not isinstance(v, int) or v < 0
+                            for v in counts
+                        )
+                        or sum(counts) != height * width
+                    ):
+                        raise SystemExit(
+                            f"Error: row {i} has invalid uncompressed RLE."
+                        )
+
+                elif not isinstance(counts, str) or not counts:
+                    raise SystemExit(
+                        f"Error: row {i} has invalid compressed RLE."
+                    )
+
+            else:
+                raise SystemExit(
+                    f"Error: row {i} segmentation must be "
+                    "a polygon list or RLE dictionary."
+                )
 
     print("Validation Successful")
 
