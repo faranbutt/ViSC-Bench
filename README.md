@@ -5,7 +5,7 @@
 ViSC-Bench evaluates instance-segmentation predictions for grape instances in images affected by corruption. Participants submit individual instance masks, class labels, and confidence scores. Submissions are evaluated automatically against private test annotations using COCO instance-segmentation evaluation.
 
 <p align="center">
-  <img src="images/output.png" alt="Wine Grape Segmentation Example" width="400">
+  <img src="/images/output.png" alt="Wine Grape Segmentation Example" width="400">
 </p>
 
 ## Public data
