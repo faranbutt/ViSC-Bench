@@ -24,4 +24,8 @@ Detection:
 ```
 
 ## Form to Submit:
-https://docs.google.com/forms/d/e/1FAIpQLSfR0vFHvkZT-qMUHREBfsOMJyeZCzhfPJ_omtaEPvWJyUGLHw/viewform
+
+https://docs.google.com/forms/d/e/1FAIpQLSfpWIkww8p7WCDKGLa_RiBqJhdI0vPptJh-KXscpXZ7jq4sAg/viewform
+
+## Leaderboard
+https://faranbutt.github.io/ViSC-Bench/
