@@ -1,0 +1,196 @@
+{
+  "info": {},
+  "licenses": [],
+  "images": [
+    {
+      "file_name": "test_0001.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 111
+    },
+    {
+      "file_name": "test_0002.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 112
+    },
+    {
+      "file_name": "test_0003.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 113
+    },
+    {
+      "file_name": "test_0004.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 114
+    },
+    {
+      "file_name": "test_0005.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 115
+    },
+    {
+      "file_name": "test_0006.jpg",
+      "height": 768,
+      "width": 1024,
+      "id": 116
+    },
+    {
+      "file_name": "test_0007.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 117
+    },
+    {
+      "file_name": "test_0008.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 118
+    },
+    {
+      "file_name": "test_0009.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 119
+    },
+    {
+      "file_name": "test_0010.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 120
+    },
+    {
+      "file_name": "test_0011.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 121
+    },
+    {
+      "file_name": "test_0012.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 122
+    },
+    {
+      "file_name": "test_0013.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 123
+    },
+    {
+      "file_name": "test_0014.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 124
+    },
+    {
+      "file_name": "test_0015.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 125
+    },
+    {
+      "file_name": "test_0016.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 126
+    },
+    {
+      "file_name": "test_0017.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 127
+    },
+    {
+      "file_name": "test_0018.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 128
+    },
+    {
+      "file_name": "test_0019.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 129
+    },
+    {
+      "file_name": "test_0020.jpg",
+      "height": 768,
+      "width": 1024,
+      "id": 130
+    },
+    {
+      "file_name": "test_0021.jpg",
+      "height": 768,
+      "width": 1024,
+      "id": 131
+    },
+    {
+      "file_name": "test_0022.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 132
+    },
+    {
+      "file_name": "test_0023.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 133
+    },
+    {
+      "file_name": "test_0024.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 134
+    },
+    {
+      "file_name": "test_0025.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 135
+    },
+    {
+      "file_name": "test_0026.jpg",
+      "height": 768,
+      "width": 1024,
+      "id": 136
+    },
+    {
+      "file_name": "test_0027.jpg",
+      "height": 682,
+      "width": 1024,
+      "id": 137
+    }
+  ],
+  "annotations": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Chardonnay",
+      "supercategory": "root"
+    },
+    {
+      "id": 2,
+      "name": "Cabernet Franc",
+      "supercategory": "root"
+    },
+    {
+      "id": 3,
+      "name": "Cabernet Sauvignon",
+      "supercategory": "root"
+    },
+    {
+      "id": 4,
+      "name": "Sauvignon Blanc",
+      "supercategory": "root"
+    },
+    {
+      "id": 5,
+      "name": "Syrah",
+      "supercategory": "root"
+    }
+  ]
+}
