@@ -1,4 +1,4 @@
-task: detection
-iou_type: bbox
+task: segmentation
+iou_type: segm
 metric: coco_ap
-one_submission_per_team: false
+one_submission_per_team: true
